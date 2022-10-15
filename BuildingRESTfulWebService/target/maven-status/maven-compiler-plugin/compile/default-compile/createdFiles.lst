@@ -1,0 +1,7 @@
+com\raiseup\ConsumingRESTfulWebService\dto\GreetingResponse$GreetingResponseBuilder.class
+com\raiseup\ConsumingRESTfulWebService\dto\GreetingResponse.class
+com\raiseup\ConsumingRESTfulWebService\service\GreetingService.class
+com\raiseup\ConsumingRESTfulWebService\controller\GreetingController.class
+com\raiseup\ConsumingRESTfulWebService\repository\GreetingRepository.class
+com\raiseup\ConsumingRESTfulWebService\model\Greeting.class
+com\raiseup\ConsumingRESTfulWebService\ResTfulWebServiceApplication.class
