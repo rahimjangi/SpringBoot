@@ -15,23 +15,27 @@ import java.util.List;
 public class CustomerController {
     private final CustomerService customerService;
 
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<List<Customer>> getCustomers(){
-        return new ResponseEntity<>(null, HttpStatus.OK);
+        List<Customer> customers=customerService.getCustomers();
+        return new ResponseEntity<>(customers, HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Customer>getCustomer(@PathVariable Long id){
-        return new ResponseEntity<>(null,HttpStatus.OK);
+    @GetMapping("/{firstName}")
+    public ResponseEntity<Customer> getCustomer(@PathVariable String firstName){
+        Customer customer=customerService.getCustomerByFirstName(firstName);
+        return new ResponseEntity<>(customer, HttpStatus.OK);
     }
 
-    @PostMapping
-    public ResponseEntity<Customer>saveCustomer(@PathVariable Long id){
+    @PostMapping("/")
+    public ResponseEntity saveCustomer(@RequestBody Customer customer){
+        customerService.save(customer);
         return new ResponseEntity<>(null,HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Customer>deleteCustomer(@PathVariable Long id){
+        customerService.deleteCustomer(id);
         return new ResponseEntity<>(null,HttpStatus.OK);
     }
 }
