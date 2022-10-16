@@ -7,6 +7,7 @@
         <module>ConsumingRESTfulWebService</module>
         <module>BuildingRESTfulWebService</module>
         <module>UploadingFiles</module>
+        <module>MessagingwithRedis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
