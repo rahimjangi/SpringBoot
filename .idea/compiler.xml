@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="BuildingRESTfulWebService" />
         <module name="ConsumingRESTfulWebService" />
+        <module name="JDBC_API" />
         <module name="MessagingwithRedis" />
         <module name="UploadingFiles" />
       </profile>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BuildingRESTfulWebService" options="-parameters" />
       <module name="ConsumingRESTfulWebService" options="-parameters" />
+      <module name="JDBC_API" options="-parameters" />
       <module name="MessagingwithRedis" options="-parameters" />
       <module name="SpringBoot" options="" />
       <module name="UploadingFiles" options="-parameters" />

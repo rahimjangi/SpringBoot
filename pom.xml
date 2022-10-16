@@ -8,6 +8,7 @@
         <module>BuildingRESTfulWebService</module>
         <module>UploadingFiles</module>
         <module>MessagingwithRedis</module>
+        <module>JDBC_API</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
